@@ -7,3 +7,10 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+regex = "1"
+lazy_static = "1.4.0"
+influent = "0.5"
+futures = "0.1"
+tokio = "0.1"
+tokio-executor = "0.1"
+maxminddb = "0.14.0"
