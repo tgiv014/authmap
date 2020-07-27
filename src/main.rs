@@ -77,7 +77,7 @@ impl<'a> InfluxInjector<'a> {
 
         InfluxInjector {
             client: create_client(credentials, hosts),
-            reader: maxminddb::Reader::open_readfile("./GeoLite2-City.mmdb").unwrap(),
+            reader: maxminddb::Reader::open_readfile("/etc/authmap/GeoLite2-City.mmdb").unwrap(),
         }
     }
 
