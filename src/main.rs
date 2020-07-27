@@ -73,7 +73,7 @@ impl<'a> InfluxInjector<'a> {
             password: "root",
             database: "db0"
         };
-        let hosts = vec!["http://localhost:8086"];
+        let hosts = vec!["http://influxdb:8086"];
 
         InfluxInjector {
             client: create_client(credentials, hosts),
